@@ -27,7 +27,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QLineEdit" name="lineEdit"/>
+         <widget class="QLineEdit" name="DBHost"/>
         </item>
        </layout>
       </item>
@@ -41,7 +41,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QLineEdit" name="lineEdit_2"/>
+         <widget class="QLineEdit" name="DBUsername"/>
         </item>
        </layout>
       </item>
@@ -55,14 +55,25 @@
          </widget>
         </item>
         <item>
-         <widget class="QLineEdit" name="lineEdit_3"/>
+         <widget class="QLineEdit" name="DBPassword">
+          <property name="echoMode">
+           <enum>QLineEdit::Password</enum>
+          </property>
+         </widget>
         </item>
        </layout>
       </item>
      </layout>
     </item>
     <item>
-     <widget class="QPlainTextEdit" name="plainTextEdit"/>
+     <widget class="QPlainTextEdit" name="query"/>
+    </item>
+    <item>
+     <widget class="QPushButton" name="runQueryButton">
+      <property name="text">
+       <string>Run Query</string>
+      </property>
+     </widget>
     </item>
    </layout>
   </widget>
