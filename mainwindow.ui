@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>586</width>
-    <height>383</height>
+    <width>839</width>
+    <height>457</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -61,12 +61,26 @@
           </property>
          </widget>
         </item>
+        <item>
+         <widget class="QPushButton" name="connectButton">
+          <property name="text">
+           <string>Connect</string>
+          </property>
+         </widget>
+        </item>
        </layout>
       </item>
      </layout>
     </item>
     <item>
-     <widget class="QPlainTextEdit" name="query"/>
+     <layout class="QHBoxLayout" name="horizontalLayout_5">
+      <item>
+       <widget class="QPlainTextEdit" name="query"/>
+      </item>
+      <item>
+       <widget class="QTableWidget" name="tableWidget"/>
+      </item>
+     </layout>
     </item>
     <item>
      <widget class="QPushButton" name="runQueryButton">
@@ -82,10 +96,17 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>586</width>
+     <width>839</width>
      <height>22</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionExit"/>
+   </widget>
+   <addaction name="menuFile"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <attribute name="toolBarArea">
@@ -96,6 +117,11 @@
    </attribute>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>

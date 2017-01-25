@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QtSql>
 
 namespace Ui {
 class MainWindow;
@@ -15,8 +16,16 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
 
+private slots:
+    void on_pushButton_clicked();
+
+    void on_runQueryButton_clicked();
+
+    void on_connectButton_clicked();
+
 private:
     Ui::MainWindow *ui;
+    QSqlDatabase *connection;
 };
 
 #endif // MAINWINDOW_H
